@@ -1,0 +1,353 @@
+:root {
+  --color-fondo: #B7D5E5;
+  --color-fondo-footer: white;
+  --color-targetas: #F2DCDB;
+  --color-targetas-hover: #bba9a8;
+  --color-texto: black;
+  --color-texto-input: black;
+  --color-fondo-input: white;
+  --color-p: black; 
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 8px; /* Ancho de la barra de desplazamiento */
+  background-color: transparent; /* Fondo transparente */
+}
+
+/* Estilos para el riel de la barra de desplazamiento */
+::-webkit-scrollbar-track {
+  background-color: transparent; /* Fondo transparente */
+}
+
+/* Estilos para el pulgar de la barra de desplazamiento */
+::-webkit-scrollbar-thumb {
+  background-color: #3f3f3f; /* Color de la barra de desplazamiento */
+  border-radius: 4px; /* Borde redondeado del pulgar */
+}
+
+/* Estilos para el pulgar de la barra de desplazamiento al pasar el cursor */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Color de la barra de desplazamiento al pasar el cursor */
+}
+
+body {
+  /* background-color: #272727; */
+  background-color: var(--color-fondo) ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  color: var(--color-texto);
+}
+
+footer {
+  background-color: var(--color-fondo-footer);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  color: var(--color-texto);
+}
+
+/* Barra de navegación */
+
+.navBarr {
+  position: fixed;
+  top: 10px;
+  background-color: #22D3EE;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  padding: 8px;
+  margin-top: 10px;
+  margin-bottom: 180px;
+}
+
+.logo {
+  width: 150px;
+  border-radius: 8px;
+  margin-right: 100px;
+}
+
+.links {
+  display: flex;
+  gap: 25px;
+  margin-right: 10px;
+}
+
+.links a {
+  text-decoration: none;
+  color: aliceblue;
+  font-weight: bolder;
+  transition: all .2s;
+}
+
+.links a:hover {
+ color: #F11D57;
+ font-size: large;
+ transition: all .2s;
+}
+
+
+/* Redes sociales */
+
+.redes {
+  position: fixed;
+  right: 10px;
+  top: 40vh;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.redes img {
+  width: 50px;
+  border-radius: 15px;
+  transition: all .2s;
+}
+
+.redes img:hover {
+  width: 60px;
+  transition: all .2s;
+}
+
+
+/* Quienes somos */
+
+.quienesSomos {
+  display: flex;
+  flex-wrap: wrap;
+  width: 900px;
+  gap: 15px;
+  justify-content: center;
+  padding-top: 300px;
+}
+
+.quienesSomos div {
+  background-color: var(--color-targetas);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all .2s;
+  padding: 15px;
+}
+
+.quienesSomos div:hover {
+  background-color: var(--color-targetas-hover);
+  transition: all .2s;
+}
+
+.quienesSomos h3 {
+  font-size: medium;
+}
+
+.quienesSomos p {
+  width: 370px;
+  color: var(--color-p);
+  line-height: 1.5;
+}
+
+.quienesSomos a {
+  text-decoration: none;
+  color: #F11D57;
+  font-weight: bolder;
+}
+
+
+/* Estres Y ansiedad */
+
+#estres-y-ansiedad {
+  display: flex;
+  flex-wrap: wrap;
+  width: 900px;
+  gap: 15px;
+  justify-content: center;
+  padding-top: 300px;
+}
+
+#estres-y-ansiedad img {
+  border-radius: 8px;
+}
+
+#estres-y-ansiedad div {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-targetas);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all .2s;
+  padding: 15px;
+}
+
+#estres-y-ansiedad div:hover {
+  background-color: var(--color-targetas-hover);
+  transition: all .2s;
+}
+
+#estres-y-ansiedad h3 {
+  font-size: medium;
+}
+
+#estres-y-ansiedad p {
+  width: 370px;
+  color: var(--color-p);
+  line-height: 1.5;
+}
+
+#estres-y-ansiedad a {
+  text-decoration: none;
+  color: #F11D57;
+  font-weight: bolder;
+}
+
+
+/* Tratamientos */
+
+#tratamientos {
+  display: flex;
+  flex-wrap: wrap;
+  width: 900px;
+  gap: 15px;
+  justify-content: center;
+  padding-top: 300px;
+}
+
+#tratamientos div {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-targetas);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all .2s;
+  padding: 15px;
+}
+
+#tratamientos div:hover {
+  background-color: var(--color-targetas-hover);
+  transition: all .2s;
+}
+
+#tratamientos h3 {
+  font-size: medium;
+}
+
+#tratamientos p {
+  width: 370px;
+  color: var(--color-p);
+  line-height: 1.5;
+}
+
+#tratamientos a {
+  text-decoration: none;
+  color: #F11D57;
+  font-weight: bolder;
+}
+
+/* Agendar Cita */
+
+#agendar-cita {
+  padding-top: 300px;
+  margin-bottom: 400px;
+}
+
+#agendar-cita form {
+  background-color: var(--color-targetas);
+  padding: 30px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+#agendar-cita input {
+  margin-bottom: 30px;
+  width: 300px;
+  height: 25px;
+  border-radius: 4px;
+  outline: none;
+  padding: 5px;
+  background-color: var(--color-fondo-input);
+  border: none;
+  color: var(--color-texto-input);
+  font-size: 20px;
+}
+
+#agendar-cita span {
+  margin-bottom: 10px;
+}
+
+#agendar-cita button {
+  border-radius: 8px;
+  height: 30px;
+  background-color: #F11D57;
+  border: none;
+  color: aliceblue;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all .2s;
+}
+
+#agendar-cita button:hover {
+  background-color: #b41841;
+  transition: all .2s;
+}
+
+
+/* Pie de pagina */
+
+footer {
+  width: 99vw;
+  background-color: var(--color-fondo-footer);
+  padding-top: 30px;
+}
+
+.pie-de-pagina {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 120px;
+  justify-content: center;
+}
+
+.pie-de-pagina div {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all .2s;
+  padding: 15px;
+}
+
+.pie-de-pagina div:hover {
+  background-color: var(--color-targetas-hover);
+  transition: all .2s;
+}
+
+.pie-de-pagina h3 {
+  font-size: medium;
+  color: #F11D57;
+}
+
+.pie-de-pagina p {
+  width: 370px;
+  color: var(--color-p);
+  line-height: 1.5;
+}
+
+
+/* Copyright */
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.red {
+  color: #F11D57;
+}
